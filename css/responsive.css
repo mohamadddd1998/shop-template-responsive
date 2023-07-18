@@ -1,0 +1,223 @@
+/*************max-width: 1024px ***************/
+@media screen and (max-width: 1024px) {
+  /*index.html*/
+  .carousel-cell-first {
+    width: 40%;
+  }
+  .menu_cart_items {
+    width: 80vw;
+  }
+  .menubottom_searchbox form {
+    width: 60%;
+  }
+  .category,.articles{
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/*************max-width: 800px ***************/
+@media screen and (max-width: 800px) {
+  /*index.html*/
+  .carousel-cell-first {
+    width: 60%;
+  }
+  .carousel-cell-first figure{
+    text-align: center;
+  }
+  .menu_cart_items {
+    width: 80vw;
+  }
+  .menu_cart_items tr td:first-child img {
+    width: 50px;
+  }
+  .mySlides .text div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mySlides {
+    flex-direction: column-reverse;
+  }
+  .top_slider__btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .top_slider .text h1 {
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .service {
+    flex-direction: column;
+    align-items: end;
+  }
+  .pre_order_img {
+    display: none;
+  }
+  .pre_order {
+    justify-content: center;
+  }
+  .pre_order_content {
+    width: 100%;
+  }
+  .special_offer_content h2::before,
+  .special_offer_content h2::after {
+    display: none;
+  }
+  #buy_offer {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  .special_sales_container {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(2, auto);
+  }
+  .ads {
+    flex-direction: column;
+  }
+  .support {
+    flex-direction: column;
+  }
+  .support_logo {
+    margin: 12px 0px;
+  }
+  .best_sales_products {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+  .blog_posts {
+    flex-direction: column;
+  }
+
+  .blog_post figure img {
+    width: 100%;
+  }
+  .blog_post h4 {
+    font-size: 14px;
+  }
+  .news_letter {
+    width: 70%;
+  }
+  /*single.html*/
+  .details {
+    flex-direction: column-reverse;
+  }
+  /*cart.html*/
+  .cart{
+    width: 95%;
+    overflow: hidden;
+  }
+  .takhfif{
+    flex-direction: column;
+   }
+   /* category.html*/
+   .category,.articles{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .articles_image img{
+    width: 100%;
+  }
+}
+/*************max-width: 600px ***************/
+@media screen and (max-width: 600px) {
+  /*index.html*/
+  .menu_items > a {
+    display: none;
+  }
+  .menu_cart_items {
+    font-size: 12px;
+  }
+  #empty__td {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header_rigthNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menubottom {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px;
+  }
+  .menubottom_searchbox button{
+    display: none
+  };
+  .carousel-cell-first {
+    width: 100% !important;
+  }
+  .menubottom_searchbox {
+    margin-bottom: 5px;
+  }
+  .menubottom_searchbox form {
+    margin: 0 auto;
+  }
+  .special-sales_items {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, auto);
+  }
+  .special_offer {
+    display: none;
+  }
+  .best_sales_products {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(8, auto);
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer_items {
+    padding: 10px;
+  }
+  .pre_order_content form div {
+    flex-direction: column;
+  }
+  .pre_order_content form div:not(:last-child) input {
+    margin-bottom: 5px;
+  }
+  /*single.html*/
+  .details_btn{
+    padding: 15px 50px;
+  }
+   /*cart.html*/
+   
+   .takhfif_content,.takhfif_input{
+    margin-bottom: 15px;
+   }
+   .takhfif_content h4{
+    font-size: 14px;
+   }
+   .articles_post header{
+    margin: 0;
+   }
+   .acount{
+    grid-template-columns: auto;
+   }
+}
+
+/*************max-width: 450px ***************/
+@media screen and (max-width: 450px) {
+  /*index.html*/
+  .carousel-cell-first {
+    width: 100%;
+    margin: auto;
+  }
+  .menu_cart_items table tr:not(:last-child) td:first-child {
+    display: none;
+  }
+  .articles_post header h4{
+    font-size: 12px;
+  }
+  .articles_post .articles_post_date{
+    display: none;
+  }
+  .articles_post footer button{
+    padding: 8px 15px;
+  }
+}

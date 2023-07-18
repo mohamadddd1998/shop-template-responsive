@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>بلاگ</title>
+  </head>
+  <body>
+    <!--header -->
+    <header>
+      <div class="header">
+        <nav class="header_rigthNav">
+          <a href="index.html">خانه</a>
+         <a href="acount.html">ثبت نام | ورود</a>
+         <a href="blog.html">بلاگ</a>
+         <a href="cart.html" >سبد خرید</a>
+         <a href="category.html">محصولات</a>
+         <a href="single.html">جزییات محصول</a>
+       </nav>
+        <nav class="header_leftNav">
+          <a>شماره تماس : ۰۵۱۳-۸۴۳۸۸۸</a>
+        </nav>
+      </div>
+    </header><!--end of header -->
+    <!--menu -->
+    <section>
+      <div class="menu">
+        <nav class="menu_items">
+          <figure id="cart">
+            <img src="images/basic/bag21.png" id="cart_icon" alt="cart" />
+          </figure>
+          <a>صفحه ی اصلی</a>
+          <a
+            >پر فروش ترین
+            <ul>
+              <li>اپل</li>
+              <li>سامسونگ</li>
+              <li>سونی</li>
+            </ul>
+          </a>
+          <a
+            >محصولات
+            <ul>
+              <li>موبایل</li>
+              <li>تبلت</li>
+              <li>کامپیوتر</li>
+              <li>لپ تاپ</li>
+            </ul>
+          </a>
+          <a>فروش ویژه</a>
+          <!--cart items-->
+          <div class="menu_cart_items toggle_cart">
+            <table>
+              <tr>
+                <td><img src="images/cart-img-1.png" /></td>
+                <td>Mackbook 2016</td>
+                <td>
+                  <h4>۲.۵۰۰.۰۰۰</h4>
+                </td>
+                <td>
+                  <img src="images/icons/trash.svg" width="15px" />
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/cart-img-2.png" /></td>
+                <td>Sumsung 2017</td>
+                <td>
+                  <h4>۲.۵۰۰.۰۰۰</h4>
+                </td>
+                <td>
+                  <img src="images/icons/trash.svg" width="15px" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="total_price">
+                  قیمت کل :<span> ۲.۵۰۰.۰۰۰ تومان</span>
+                </td>
+                <td></td>
+                <td>
+                  <a> تسویه حساب </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </nav>
+        <figure class="menu_logo">
+          <img src="images/logo-light.png" alt="logo-light" />
+        </figure>
+
+        <!--menu bottom-->
+        <div class="menubottom">
+          <div class="menubottom_searchbox">
+            <form onsubmit="return false">
+              <input
+                type="text"
+                placeholder="کالا یا محصول مورد نظر را جستجو کنید..."
+              />
+              <button>
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="menubottom_social">
+            <nav>
+              <a>
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a>
+                <i class="fa fa-telegram"></i>
+              </a>
+              <a>
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a>
+                <i class="fa fa-facebook"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!--end of menu -->
+    <!--cover single -->
+    <section>
+      <div class="cover_single">
+        <p>Smartphone Apple iPhone 5 64GB</p>
+      </div>
+    </section><!--end of cover single -->
+    <!--articles-->
+    <section>
+      <div class="articles">
+        <div class="articles_sidebar">
+          <div class="articles_image">
+            <figure>
+              <img src="images/blog/sidebar4.jpg" />
+            </figure>
+          </div>
+          <div class="articles_image">
+            <figure>
+              <img src="images/blog/sidebar3.jpg" />
+            </figure>
+          </div>
+          <div class="articles_image">
+            <figure>
+              <img src="images/blog/sidebar2.jpg" />
+            </figure>
+          </div>
+          <div class="articles_lable">
+            <a>سیستم عامل اندروید</a>
+            <a>سامسونگ</a>
+            <a>سیستم عامل ویندوز فون</a>
+            <a>گوشی هوشمند</a>
+            <a>لپتاپ</a>
+            <a>تجهیزات کامپیوتری</a>
+            <a>تجهیزات موبایل</a>
+            <a>لورم ایپسوم </a>
+          </div>
+        </div>
+        <div class="articles_posts">
+          <div class="articles_post">
+            <figure>
+              <img src="images/blog/blog-2.jpg" />
+              <div class="articles_post_date">
+                <p class="articles_post_day">۰۳</p>
+                <p class="articles_post_month">مرداد</p>
+                <p class="articles_post_year">۱۴۰۰</p>
+              </div>
+            </figure>
+            <header >
+              <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h4>
+            </header>
+           <article >
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و شرایط فعلی تکنولوژی مورد نیاز و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد رم ایپسوم
+              متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+              سطرآنچنان که لازم است و شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+              متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+           </article>
+            <footer>
+              <button>ادامه ی مطلب</button>
+            </footer>
+          </div>
+          <div class="articles_post">
+            <figure>
+              <img src="images/blog/blog-1.jpg" />
+              <div class="articles_post_date">
+                <p class="articles_post_day">۰۳</p>
+                <p class="articles_post_month">مرداد</p>
+                <p class="articles_post_year">۱۴۰۰</p>
+              </div>
+            </figure>
+            <header >
+              <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h4>
+            </header>
+           <article >
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و شرایط فعلی تکنولوژی مورد نیاز و
+              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد رم ایپسوم
+              متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+              طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+              سطرآنچنان که لازم است و شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+              متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+           </article>
+            <footer>
+              <button>ادامه ی مطلب</button>
+            </footer>
+          </div>
+          <div class="articles_paginate">
+            <a class="articles_paginate_current">۱</a>
+            <a>۲</a>
+            <a>۳</a>
+            <a>۴</a>
+          </div>
+        </div>
+      </div>
+    </section><!--end of articles-->
+    <!--news letter-->
+    <section>
+      <div class="news_letter">
+        <form onsubmit="return false">
+          <i class="fa fa-envelope news_letter_icon"></i>
+          <input type="text" placeholder="پست الکترونیک" />
+          <button class="news_letter_record">ثبت</button>
+        </form>
+        <p>
+          با عضـویت در خبرنامه هـــیچ یک از مطالـب سایت را از دست نخواهیـد داد و
+          همیـــشه بروز خواهــید بود
+        </p>
+      </div>
+    </section><!--end of news letter-->
+    <footer class="footer">
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+    </footer>
+    <section>
+      <div class="author">
+        <p>طراحی وب سایت توسط محمد میرزایی</p>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>

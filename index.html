@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>پروژه ی فروشگاهی</title>
+  </head>
+  <body>
+    <!--header -->
+    <header>
+      <div class="header">
+        <nav class="header_rigthNav">
+           <a href="index.html">خانه</a>
+          <a href="acount.html">ثبت نام | ورود</a>
+          <a href="blog.html">بلاگ</a>
+          <a href="cart.html" >سبد خرید</a>
+          <a href="category.html">محصولات</a>
+          <a href="single.html">جزییات محصول</a>
+        </nav>
+        <nav class="header_leftNav">
+          <a>شماره تماس : ۰۵۱۳-۸۴۳۸۸۸</a>
+        </nav>
+      </div>
+    </header><!--end of header -->
+    <!--menu -->
+    <section>
+      <div class="menu">
+        <nav class="menu_items">
+          <figure id="cart">
+            <img src="images/basic/bag21.png" id="cart_icon" alt="cart" />
+          </figure>
+          <a>صفحه ی اصلی</a>
+          <a
+            >پر فروش ترین
+            <ul>
+              <li>اپل</li>
+              <li>سامسونگ</li>
+              <li>سونی</li>
+            </ul>
+          </a>
+          <a
+            >محصولات
+            <ul>
+              <li>موبایل</li>
+              <li>تبلت</li>
+              <li>کامپیوتر</li>
+              <li>لپ تاپ</li>
+            </ul>
+          </a>
+          <a>فروش ویژه</a>
+          <!--cart items-->
+          <div class="menu_cart_items toggle_cart">
+            <table>
+              <tr>
+                <td><img src="images/cart-img-1.png" /></td>
+                <td>Mackbook 2016</td>
+                <td>
+                  <h4>۲.۵۰۰.۰۰۰</h4>
+                </td>
+                <td>
+                  <img src="images/icons/trash.svg" width="15px" />
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/cart-img-2.png" /></td>
+                <td>Sumsung 2017</td>
+                <td>
+                  <h4>۲.۵۰۰.۰۰۰</h4>
+                </td>
+                <td>
+                  <img src="images/icons/trash.svg" width="15px" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="total_price">
+                  قیمت کل :<span> ۲.۵۰۰.۰۰۰ تومان</span>
+                </td>
+                <td id="empty__td"></td>
+                <td id="checkout__btn">
+                  <a href="cart.html" > تسویه حساب </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </nav>
+        <figure class="menu_logo">
+          <a href="index.html"
+            ><img src="images/logo-light.png" alt="logo-light"
+          /></a>
+        </figure>
+        <!--menu bottom-->
+        <div class="menubottom">
+          <div class="menubottom_searchbox">
+            <form onsubmit="return false">
+              <input type="text" placeholder="جستجو کنید..." />
+              <button>
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="menubottom_social">
+            <nav>
+              <a>
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a>
+                <i class="fa fa-telegram"></i>
+              </a>
+              <a>
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a>
+                <i class="fa fa-facebook"></i>
+              </a>
+            </nav>
+          </div>
+        </div><!--end of menu bottom-->
+      </div>
+    </section> <!--end of menu -->
+    <!--slider-->
+    <section id="top_slider">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="text">
+            <h1>Apple iPhone 6s</h1>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+            <div class="top_slider__btns">
+              <a>افزودن به سبد خرید</a>
+              <a>۲.۵۰۰.۰۰۰ تومان</a>
+            </div>
+          </div>
+          <figure>
+            <img src="images/slider/home1-slider1.png" />
+          </figure>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="text">
+            <h1>Apple iPhone 6s</h1>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+            <a>افزودن به سبد خرید</a>
+            <a>۲.۵۰۰.۰۰۰ تومان</a>
+          </div>
+          <figure>
+            <img src="images/slider/home1-slider2.png" />
+          </figure>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="text">
+            <h1>Apple iPhone 6s</h1>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+            <a>افزودن به سبد خرید</a>
+            <a>۲.۵۰۰.۰۰۰ تومان</a>
+          </div>
+          <figure>
+            <img src="images/slider/home1-slider3.png" />
+          </figure>
+        </div>
+      </div>
+      <div style="text-align: center" class="dot_container">
+        <span class="dot" onclick="currentSlide(1)" number="1"></span>
+        <span class="dot" onclick="currentSlide(2)" number="2"></span>
+        <span class="dot" onclick="currentSlide(3)" number="3"></span>
+      </div>
+
+      <a class="prev_tops" onclick="plusSlides(-1)">❮</a>
+      <a class="next_tops" onclick="plusSlides(1)">❯</a>
+    </section> <!--end of slider-->
+    <!--service-->
+    <section>
+      <div class="service">
+        <div class="service_content">
+          <div class="service_header">
+            <h4>ارسال رایگان</h4>
+            <p>بالای ۵۰ هزار تومان و زیر ۹ کیلوگرم</p>
+          </div>
+          <a class="service_icon">
+            <i class="fa fa-plane"></i>
+          </a>
+        </div>
+        <div class="service_content">
+          <div class="service_header">
+            <h4>بازگشت محصول</h4>
+            <p>فرصت ۱۴ روزه</p>
+          </div>
+          <a class="service_icon">
+            <i class="fa fa-undo"></i>
+          </a>
+        </div>
+        <div class="service_content">
+          <div class="service_header">
+            <h4>امکان پرداخت در محل</h4>
+            <p>نقدی یا کارت بانکی</p>
+          </div>
+          <a class="service_icon">
+            <i class="fa fa-credit-card"></i>
+          </a>
+        </div>
+        <div class="service_content">
+          <div class="service_header">
+            <h4>تضمین اصالت کالا</h4>
+            <p>گارانتی معتبر</p>
+          </div>
+          <a class="service_icon">
+            <i class="fa fa-shield"></i>
+          </a>
+        </div>
+      </div>
+    </section><!--end of service-->
+    <!--newest products-->
+    <section>
+      <div class="newest_products">
+        <div class="title">
+          <h4>جدیدترین محصولات</h4>
+          <p>به روز ۲۵ خرداد ۹۵</p>
+        </div>
+        <div
+          class="carousel carousel-first"
+          data-flickity='{ "groupCells": 1 , "freeScroll": true,
+      "wrapAround": true , "pageDots": false , "autoPlay": false }'
+        >
+          <div class="carousel-cell carousel-cell-first">
+            <figure>
+              <img src="images/post/news-img-2.png" />
+              <div class="carousel-cell_icon">
+                <a>
+                  <i class="fa fa-heart"></i>
+                </a>
+                <a>
+                  <i class="fa fa-user"></i>
+                </a>
+              </div>
+            </figure>
+            <h4>Apple iPhone 6s</h4>
+            <nav>
+              <a>نقره ایی</a>
+              <a>مشکی</a>
+              <a>سفید</a>
+            </nav>
+            <span>۲.۵۰۰.۰۰۰ تومان</span>
+            <div id="buy">خرید آنلاین</div>
+          </div>
+          <div class="carousel-cell carousel-cell-first">
+            <figure>
+              <img src="images/post/news-img-1.png" />
+              <div class="carousel-cell_icon">
+                <a>
+                  <i class="fa fa-heart"></i>
+                </a>
+                <a>
+                  <i class="fa fa-user"></i>
+                </a>
+              </div>
+            </figure>
+            <h4>Apple iPhone 6s</h4>
+            <nav>
+              <a>نقره ایی</a>
+              <a>مشکی</a>
+              <a>سفید</a>
+            </nav>
+            <span>۲.۵۰۰.۰۰۰ تومان</span>
+            <div id="buy">خرید آنلاین</div>
+          </div>
+          <div class="carousel-cell carousel-cell-first">
+            <figure>
+              <img src="images/post/news-img-3.png" />
+              <div class="carousel-cell_icon">
+                <a>
+                  <i class="fa fa-heart"></i>
+                </a>
+                <a>
+                  <i class="fa fa-user"></i>
+                </a>
+              </div>
+            </figure>
+            <h4>Apple iPhone 6s</h4>
+            <nav>
+              <a>نقره ایی</a>
+              <a>مشکی</a>
+              <a>سفید</a>
+            </nav>
+            <span>۲.۵۰۰.۰۰۰ تومان</span>
+            <div id="buy">خرید آنلاین</div>
+          </div>
+          <div class="carousel-cell carousel-cell-first">
+            <figure>
+              <img src="images/product/featured-img-1.png" />
+              <div class="carousel-cell_icon">
+                <a>
+                  <i class="fa fa-heart"></i>
+                </a>
+                <a>
+                  <i class="fa fa-user"></i>
+                </a>
+              </div>
+            </figure>
+            <h4>Apple iPhone 6s</h4>
+            <nav>
+              <a>نقره ایی</a>
+              <a>مشکی</a>
+              <a>سفید</a>
+            </nav>
+            <span>۲.۵۰۰.۰۰۰ تومان</span>
+            <div id="buy">خرید آنلاین</div>
+          </div>
+          <div class="carousel-cell carousel-cell-first">
+            <figure>
+              <img src="images/product/featured-img-2.png" />
+              <div class="carousel-cell_icon">
+                <a>
+                  <i class="fa fa-heart"></i>
+                </a>
+                <a>
+                  <i class="fa fa-user"></i>
+                </a>
+              </div>
+            </figure>
+            <h4>Apple iPhone 6s</h4>
+            <nav>
+              <a>نقره ایی</a>
+              <a>مشکی</a>
+              <a>سفید</a>
+            </nav>
+            <span>۲.۵۰۰.۰۰۰ تومان</span>
+            <div id="buy">خرید آنلاین</div>
+          </div>
+          <div class="carousel-cell carousel-cell-first">
+            <figure>
+              <img src="images/product/featured-img-3.png" />
+              <div class="carousel-cell_icon">
+                <a>
+                  <i class="fa fa-heart"></i>
+                </a>
+                <a>
+                  <i class="fa fa-user"></i>
+                </a>
+              </div>
+            </figure>
+            <h4>Apple iPhone 6s</h4>
+            <nav>
+              <a>نقره ایی</a>
+              <a>مشکی</a>
+              <a>سفید</a>
+            </nav>
+            <span>۲.۵۰۰.۰۰۰ تومان</span>
+            <div id="buy">خرید آنلاین</div>
+          </div>
+        </div>
+      </div>
+    </section><!--end of newest products-->
+    <!--special offer-->
+    <section>
+      <div class="special_offer">
+        <div class="special_offer_image">
+          <figure>
+            <img src="images/camera-full.png" />
+          </figure>
+        </div>
+        <div class="special_offer_content">
+          <h2>دوربین کنون ۲۰</h2>
+          <h5>۵۰ درصد تخفیف ویژه</h5>
+          <div id="buy_offer">خرید آنلاین</div>
+        </div>
+        <figure id="special_offer_logo">
+          <img src="images/special-offer.jpg" />
+        </figure>
+      </div>
+    </section><!--end of special offer-->
+    <!--special sales-->
+    <section>
+      <div class="special_sales">
+        <div class="title">
+          <h4>فروش ویژه</h4>
+          <p>به روز ۲۵ خرداد ۹۵</p>
+        </div>
+        <div class="special_sales_container">
+          <div class="special-sales_items">
+            <div class="special-sales_item">
+              <figure>
+                <img src="images/sales/2.png" class="img" />
+                <figcaption>
+                  <p>Watch Sport</p>
+                  <nav>
+                    <a>۲.۵۰۰.۰۰۰ تومان</a>
+                    <del>۲.۵۰۰.۰۰۰ تومان</del>
+                  </nav>
+                </figcaption>
+              </figure>
+              <div id="special_sales_buy">
+                <button>خرید آنلاین</button>
+              </div>
+            </div>
+            <div class="special-sales_item">
+              <figure>
+                <img src="images/sales/3.png" class="img" />
+                <figcaption>
+                  <p>Watch Sport</p>
+                  <nav>
+                    <a>۲.۵۰۰.۰۰۰ تومان</a>
+                    <del>۲.۵۰۰.۰۰۰ تومان</del>
+                  </nav>
+                </figcaption>
+              </figure>
+              <div id="special_sales_buy">
+                <button>خرید آنلاین</button>
+              </div>
+            </div>
+            <div class="special-sales_item">
+              <figure>
+                <img src="images/sales/4.png" class="img" />
+                <figcaption>
+                  <p>Watch Sport</p>
+                  <nav>
+                    <a>۲.۵۰۰.۰۰۰ تومان</a>
+                    <del>۲.۵۰۰.۰۰۰ تومان</del>
+                  </nav>
+                </figcaption>
+              </figure>
+              <div id="special_sales_buy">
+                <button>خرید آنلاین</button>
+              </div>
+            </div>
+            <div class="special-sales_item">
+              <figure>
+                <img src="images/sales/5.png" class="img" />
+                <figcaption>
+                  <p>Watch Sport</p>
+                  <nav>
+                    <a>۲.۵۰۰.۰۰۰ تومان</a>
+                    <del>۲.۵۰۰.۰۰۰ تومان</del>
+                  </nav>
+                </figcaption>
+              </figure>
+              <div id="special_sales_buy">
+                <button>خرید آنلاین</button>
+              </div>
+            </div>
+          </div>
+          <div class="special_sales_mainItem">
+            <figure>
+              <img src="images/sales/1.png" class="img" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+            <div id="special_sales_buy">
+              <button>خرید آنلاین</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--end of special_sales-->
+    <!--customers-->
+    <section>
+      <div class="customers">
+        <div class="title">
+          <h4>نظرات مشتریان</h4>
+        </div>
+        <div
+          class="carousel customers_slider"
+          data-flickity='{ "fullscreen": true ,"prevNextButtons": false,"autoPlay": 3000,"wrapAround": true}'
+        >
+          <div class="carousel-cell carousel-cell_second">
+            <figure>
+              <img src="images/user.png" />
+              <figcaption>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-cell carousel-cell_second">
+            <figure>
+              <img src="images/user.png" />
+              <figcaption>
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section><!--end of customers-->
+    <!--ads-->
+    <section>
+      <div class="ads">
+        <div>
+          <figure>
+            <img src="images/block/1.jpg" />
+            <span>خرید آنلاین</span>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="images/block/2.jpg" />
+            <span>خرید آنلاین</span>
+          </figure>
+        </div>
+      </div>
+    </section><!--end of ads-->
+    <!--support-->
+    <section>
+      <div class="support">
+        <div class="support_logo">
+          <figure>
+            <img src="images/company/apple.png" />
+          </figure>
+        </div>
+        <div class="support_logo">
+          <figure>
+            <img src="images/company/google.png" />
+          </figure>
+        </div>
+        <div class="support_logo">
+          <figure>
+            <img src="images/company/htc.png" />
+          </figure>
+        </div>
+        <div class="support_logo">
+          <figure>
+            <img src="images/company/lg.png" />
+          </figure>
+        </div>
+        <div class="support_logo">
+          <figure>
+            <img src="images/company/nokia.png" />
+          </figure>
+        </div>
+        <div class="support_logo">
+          <figure>
+            <img src="images/company/sony.png" />
+          </figure>
+        </div>
+      </div>
+    </section><!--end of support-->
+    <!--best sales-->
+    <section>
+      <div class="best_sales">
+        <div class="title">
+          <h4>فروش ویژه</h4>
+          <p>به روز ۲۵ خرداد ۹۵</p>
+        </div>
+        <div class="best_sales_products">
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/2.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/3.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/4.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/5.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/6.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/7.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/8.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="best_sales_product">
+            <figure>
+              <img src="images/sales/9.png" />
+              <figcaption>
+                <p>Watch Sport</p>
+                <nav>
+                  <a>۲.۵۰۰.۰۰۰ تومان</a>
+                  <del>۲.۵۰۰.۰۰۰ تومان</del>
+                </nav>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section><!--end of best sales-->
+    <!--pre order-->
+    <section>
+      <div class="pre_order">
+        <div class="pre_order_content">
+          <h4>پیش سفارش آیفون 6</h4>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+          </p>
+          <form onsubmit="return false">
+            <div>
+              <input type="text" placeholder="نام و نام خانوادگی" />
+              <input type="email" placeholder="ایمیل" />
+            </div>
+            <div>
+              <input type="text" placeholder="شماره همراه" />
+              <input type="number" placeholder="تعداد" min="0" />
+            </div>
+            <div class="pre_order_send">
+              <button>ارسال</button>
+            </div>
+          </form>
+        </div>
+        <div class="pre_order_img">
+          <figure>
+            <img src="images/iphone6.png" />
+          </figure>
+        </div>
+      </div>
+    </section><!--end of pre order-->
+    <!--blog-->
+    <section>
+      <div class="blog">
+        <div class="title">
+          <h4>فروش ویژه</h4>
+          <p>به روز ۲۵ خرداد ۹۵</p>
+        </div>
+        <div class="blog_posts">
+          <div class="blog_post">
+            <figure>
+              <img src="images/blog/1.png" />
+            </figure>
+            <h4 class="figcaption">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="blog_post">
+            <figure>
+              <img src="images/blog/2.jpg" />
+            </figure>
+            <h4 class="figcaption">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+          <div class="blog_post">
+            <figure>
+              <img src="images/blog/3.png" />
+            </figure>
+            <h4 class="figcaption">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </h4>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!--end of blog-->
+    <!--news letter-->
+    <section>
+      <div class="news_letter">
+        <form onsubmit="return false">
+          <i class="fa fa-envelope news_letter_icon"></i>
+          <input type="text" placeholder="پست الکترونیک" />
+          <button class="news_letter_record">ثبت</button>
+        </form>
+        <p>
+          با عضـویت در خبرنامه هـــیچ یک از مطالـب سایت را از دست نخواهیـد داد و
+          همیـــشه بروز خواهــید بود
+        </p>
+      </div>
+    </section><!--end of news letter-->
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+      <div class="footer_items">
+        <h4>اطلاعات عمومی</h4>
+        <ul>
+          <li><a>درباره ما</a></li>
+          <li><a>اطلاعات حمل و نقل</a></li>
+          <li><a>حریم خصوصی</a></li>
+          <li><a>قوانین و مقررات</a></li>
+          <li><a>برندها</a></li>
+        </ul>
+      </div>
+    </footer><!--end of footer-->
+    <!--author-->
+    <section>
+      <div class="author">
+        <p>طراحی وب سایت توسط محمد میرزایی</p>
+      </div>
+    </section><!--end of author-->
+    <script src="js/app.js"></script>
+  </body>
+</html>
